@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+.hms{height: 100%;
+	width: 100%;
+	background-image:url(login.jfif);
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.hsm{
+	background: url('bg.jpg') no-repeat left fixed;     
+    background-size:cover;
+}
