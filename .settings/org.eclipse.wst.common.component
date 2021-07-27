@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="HotelManagement">
+        
+    <wb-module deploy-name="HospitalManagementSystemm">
+                
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <property name="context-root" value="HotelManagement"/>
-        <property name="java-output-path" value="/HotelManagement/build/classes"/>
+                
+        <property name="java-output-path" value="/HospitalManagementSystemm/build/classes"/>
+        <property name="context-root" value="HospitalManagementSystemm"/>
+            
     </wb-module>
+    
 </project-modules>
