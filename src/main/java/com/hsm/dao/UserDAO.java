@@ -58,7 +58,7 @@ public class UserDAO {
 		Patient patient=null;
 		try {
 			connection=DBConnection.getConnection();
-			PreparedStatement ps=connection.prepareStatement("SELECT * from \"user\" WHERE ID=?");
+			PreparedStatement ps=connection.prepareStatement("SELECT * from Patient_Details WHERE ID=?");
 			ps.setInt(1, ID);
 			ResultSet resultset=ps.executeQuery();
 			while(resultset.next())
