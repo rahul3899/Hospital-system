@@ -54,6 +54,24 @@ public class UserDAO {
 
 	}
 
-
+	public Patient findUserByID(int ID){
+		Patient patient=null;
+		try {
+			connection=DBConnection.getConnection();
+			PreparedStatement ps=connection.prepareStatement("SELECT * from \"user\" WHERE ID=?");
+			ps.setInt(1, ID);
+			ResultSet resultset=ps.executeQuery();
+			while(resultset.next())
+			{
+				patient=new Patient(resultset.getInt(1), resultset.getString(2), resultset.getString(3), resultset.getString(4),resultset.getInt(5), resultset.getString(6), resultset.getString(7), resultset.getString(8));
+			}
+		}
+		catch(SQLException |ClassNotFoundException s) {
+			System.out.println(s);
+			
+		}
+		return patient;
+	}
+	
 
 }
